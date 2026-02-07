@@ -1,0 +1,59 @@
+.header {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+.navbar {
+    text-align: center;
+    margin:50px;
+}
+.navlink {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.body {
+    background-color: skyblue;
+}
+
+.main {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.achievements-main {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.messipicture {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 250px;
+    height: auto; 
+    text-align: center;
+}
+
+.avmAside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.messipictureAchievements {
+    border-radius: 30px;
+    width: 250px;
+    height: auto;
+    
+
+}
