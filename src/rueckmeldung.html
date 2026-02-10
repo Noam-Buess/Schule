@@ -17,7 +17,30 @@
         <a href="achivements.html" class="navlink">Achivements</a>
     </nav>
     <main class="main">
-        <p>Seite ist in Bearbeitung</p>
+        <h2>Kontaktformular</h2>
+        <form action="formular.php" method="post">
+            <label>Anrede *</label> <br>
+
+            <input type="radio" name="anrede" id="frau" value="Frau" required>
+            <label for="frau">Frau</label>
+
+            <input type="radio" name="anrede" id="herr" value="Herr" required>
+            <label for="herr">Herr</label>
+
+            <input type="radio" name="anrede" id="divers" value="Divers" required>
+            <label for="divers">Divers</label><br><br>
+
+            <label for="firstname">Vorname *</label><br>
+            <input type="text" name="firstname" id="firstname" value="Vorname" required><br><br>
+
+            <label for="lastname">Nachname *</label><br>
+            <input type="text" name="lastname" id="lastname" value="Nachname" required><br><br>
+
+            <label for="email">E-Mail *</label><br>
+            <input type="email" name="email" id="email" value="example@example.com" required><br>
+
+            <input type="submit" value="Absenden">
+        </form>
     </main>
 </body>
 </html>

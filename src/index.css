@@ -43,6 +43,19 @@
     height: auto; 
     text-align: center;
 }
+.vereine {
+    border-radius: 30px;
+    width: 250px;
+    height: auto; 
+    text-align: center;
+}
+
+.vereine2 {
+    border-radius: 30px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
 
 .avmAside {
     display: flex;
