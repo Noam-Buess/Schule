@@ -1,577 +1,266 @@
-@media screen and (max-width: 1600px) {
-    :root {
-        --red-color: red;
-        --background-color: skyblue;
-        --darkblue-color: darkblue;
-        --white-color: white;
-        --lightgreen-color: lightgreen;
+:root {
+    --red-color: red;
+    --background-color: skyblue;
+    --darkblue-color: darkblue;
+    --white-color: white;
+    --lightgreen-color: lightgreen;
 
-        body {
+    body {
+        background-color: var(--background-color);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25vw 1fr 100px;
+        grid-template-areas: 
+                    "head"
+                    "main"
+                    "footer";
+    
+        .head {
+            grid-area: head;
+            align-items: center;
+            width: 100%;
             background-color: var(--background-color);
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 300px 1fr 100px;
-            grid-template-areas: 
-                        "head"
-                        "main"
-                        "footer";
-        
-            .head {
+            top:0;
+
+            .title {
                 grid-area: head;
-                align-items: center;
-                width: 100%;
-                background-color: var(--background-color);
-                top:0;
-
-                .title {
-                    grid-area: head;
-                    font-size: 3vw;
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                    color: var(--white-color);
-                }
-                .navbar {
-                    text-align: center;
-                    margin:25px;
-
-                    .navlink {
-                        font-size: 2.225vw;
-                        font-family: Arial, sans-serif;
-                        color: var(--white-color);
-                        text-decoration: none;
-                        margin: 1vw;
-                        padding: 5px;
-                        display: inline-block;
-                        transition: transform 0.3s ease, color 0.3s ease;
-                    }
-                    .navlink:hover {
-                        transform: scale(1.2);
-                        color: var(--lightgreen-color);
-                    }
-                }
-            }
-            .main {
-                grid-area: main;
-                font-size: 30px;
+                font-size: 3vw;
                 font-family: Arial, sans-serif;
                 text-align: center;
+                color: var(--white-color);
+            }
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin:2.5vw;
 
-                .messipicture {
-                    border-radius: 30px;
-                    margin-top: 2vw;
-                    width: 40vw;
-                    height: auto; 
-                    text-align: center;
+                .navlink {
+                    font-size: 2.4vw;
+                    font-family: Arial, sans-serif;
+                    color: var(--white-color);
+                    text-decoration: none;
+                    margin: 1.3vw;
+                    display: inline-block;
+                    transition: transform 0.3s ease, color 0.3s ease;
                 }
-                .vereine {
-                    border-radius: 30px;
-                    width: 250px;
-                    height: auto; 
-                    text-align: center;
+                .navlink:hover {
+                    transform: scale(1.2);
+                    color: var(--lightgreen-color);
                 }
-                .vereine2 {
+            }
+        }
+        .main {
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 2.2vw;
+            font-family: Arial, sans-serif;
+            
+
+            .messipicture {
+                border-radius: 30px;
+                margin-top: 2vw;
+                width: 40vw;
+                height: auto; 
+                text-align: center;
+            }
+            .vereine {
+                border-radius: 30px;
+                width: 30vw;
+                height: auto; 
+                text-align: center;
+            }
+            .vereine2 {
+                border-radius: 30px;
+                width: 30vw;
+                height: auto;
+                text-align: center;
+            }
+            #NOB {
+                font-size: 2.2vw;
+                color: var(--darkblue-color);
+                margin: 6vw;
+            }
+            .input {
+                width: 40vw;
+                height: 25px;
+                border-radius: 10px;
+            }
+            .input-submit {
+                width: 100px;
+                height: 25px;
+                border-radius: 10px;
+            }
+            .maps-stadiums {
+                width: 60vw;
+                height: 60vh;
+            }
+            
+        }
+        .footer {
+            grid-area: footer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            color: var(--red-color);
+            font-size: 3vw;
+        }
+        .messivideo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .messivideo #video { 
+            width: 70vw;
+            height: 40vh;  
+        }
+        main {
+
+            h2:first-child {
+                font-size: 45px;
+                color: var(--darkblue-color);
+            }
+        }
+    }
+    .body-achievements {
+        background-color: var(--background-color);
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 25vw 1fr 100px;
+        grid-template-areas: 
+                    "head head"
+                    "main aside"
+                    "footer footer";
+        .head {
+            grid-area: head;
+            align-items: center;
+            width: 100%;
+            background-color: var(--background-color);
+            top:0;
+
+            .title {
+                font-size: 3vw;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                color: var(--white-color);
+            }
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 2vw;
+
+                .navlink {
+                    font-size: 2.225vw;
+                    font-family: Arial, sans-serif;
+                    color: var(--white-color);
+                    text-decoration: none;
+                    margin: 1.3vw;
+                    display: inline-block;
+                    transition: transform 0.3s ease, color 0.3s ease;
+                }
+                .navlink:hover {
+                    transform: scale(1.2);
+                    color: var(--lightgreen-color);
+                }
+            }
+        }
+        .achievements-main {
+            grid-area: main;
+            display: flex;
+            gap: 40px;
+            padding: 5px;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.2vw;
+
+            h2 {
+                font-size: 3vw;
+                color: var(--darkblue-color);
+            }
+
+            .tbl-h {
+                border-collapse: collapse;
+            }
+            .tbl-h th, .tbl-h td {
+                border: 1px solid black;
+                padding: 10px;
+                background-color: var(--white-color);
+            }
+        }
+        .avmAside {
+            grid-area: aside;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0 auto;
+
+                .messipictureAchievements {
                     border-radius: 30px;
+                    margin-top: 30vh;
+                    width: 30vw;
+                    height: auto;
+                }
+                .CampNou {
+                    border-radius: 30px;
+                    margin-top: 30vh;
                     width: 250px;
                     height: auto;
-                    text-align: center;
                 }
-                .input {
-                    width: 200px;
-                    height: 25px;
-                    border-radius: 10px;
-                }
-                .input-submit {
-                    width: 100px;
-                    height: 25px;
-                    border-radius: 10px;
-                }
-                .maps-stadiums {
-                    width: 70vw;
-                    height: 50vh;
-                }
-                
-            }
-            .footer {
-                grid-area: footer;
-                text-align: center;
-                color: var(--red-color);
-                font-size: 30px;
-            }
-            .achievements-main {
-                display: flex;
-                gap: 40px;
-                align-items: flex-start;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-
-                .tbl-h {
-                    border-collapse: collapse;
-                }
-                .tbl-h th, .tbl-h td {
-                    border: 1px solid black;
-                    padding: 10px;
-                    background-color: var(--white-color);
-                }
-            }
-            .avmAside {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
-                    .messipictureAchievements {
-                        border-radius: 30px;
-                        width: 250px;
-                        height: auto;
-                    }
-                    .CampNou {
-                        border-radius: 30px;
-                        margin-top: 30vh;
-                        width: 250px;
-                        height: auto;
-                    }
-            }
-            .messivideo {
-                text-align: center;  
-            }
-            main {
-
-                h2:first-child {
-                    font-size: 45px;
-                    color: var(--darkblue-color);
-                }
-            }
+        }
+        .footer {
+            grid-area: footer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            color: var(--red-color);
+            font-size: 30px;
         }
     }
 }
 
-@media  screen and (max-width: 1000px) {
-    :root {
-        --red-color: red;
-        --background-color: skyblue;
-        --darkblue-color: darkblue;
-        --white-color: white;
-        --lightgreen-color: lightgreen;
+@media screen and (max-width: 900px) {
+    .navlink {
+        font-size: 2.7vw !important;
+    }
 
-        body {
-            background-color: var(--background-color);
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 200px 1fr 100px;
-            grid-template-areas: 
-                        "head"
-                        "main"
-                        "footer";
-        
-            .head {
-                grid-area: head;
-                align-items: center;
-                width: 100%;
-                background-color: var(--background-color);
-                top:0;
+    .body .head .title {
+        font-size: 4vw !important;
+    }
 
-                .title {
-                    grid-area: head;
-                    font-size: 3vw;
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                    color: var(--white-color);
-                }
-                .navbar {
-                    text-align: center;
-                    margin: 5vh;
+    .messipicture {
+        width: 60vw !important;
+    }
 
-                    .navlink {
-                        font-size: 2.3vw;
-                        font-family: Arial, sans-serif;
-                        color: var(--white-color);
-                        text-decoration: none;
-                        margin: 1vw;
-                        padding: 5px;
-                        display: inline-block;
-                        transition: transform 0.3s ease, color 0.3s ease;
-                    }
-                    .navlink:hover {
-                        transform: scale(1.2);
-                        color: var(--lightgreen-color);
-                    }
-                }
-            }
-            .main {
-                grid-area: main;
-                font-size: 30px;
-                font-family: Arial, sans-serif;
-                text-align: center;
+    .footer {
+        font-size: 2vw !important;
+    }
 
-                .messipicture {
-                    border-radius: 30px;
-                    width: 40vw;
-                    height: auto; 
-                    text-align: center;
-                }
-                .vereine {
-                    border-radius: 30px;
-                    width: 250px;
-                    height: auto; 
-                    text-align: center;
-                }
-                .vereine2 {
-                    border-radius: 30px;
-                    width: 250px;
-                    height: auto;
-                    text-align: center;
-                }
-                .input {
-                    width: 200px;
-                    height: 25px;
-                    border-radius: 10px;
-                }
-                .input-submit {
-                    width: 100px;
-                    height: 25px;
-                    border-radius: 10px;
-                }
-                .maps-stadiums {
-                    width: 60vw;
-                    height: 50vh;
-                }
-            }
-            .footer {
-                grid-area: footer;
-                text-align: center;
-                color: var(--red-color);
-                font-size: 30px;
-            }
-            .achievements-main {
-                display: flex;
-                gap: 40px;
-                align-items: flex-start;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
+    .vereine, .vereine2 {
+        width: 40vw !important;
+    }
 
-                .tbl-h {
-                    border-collapse: collapse;
-                }
-                .tbl-h th, .tbl-h td {
-                    border: 1px solid black;
-                    padding: 10px;
-                    background-color: var(--white-color);
-                }
-            }
-            .avmAside {
-                
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
-                    .messipictureAchievements {
-                        border-radius: 30px;
-                        width: 250px;
-                        height: auto;
-                    }
-                    .CampNou {
-                        border-radius: 30px;
-                        margin-top: 35vh;
-                        width: 30vw;
-                    }
-            }
-            .messivideo {
-                text-align: center;  
-            }
-            main {
-
-                h2:first-child {
-                    font-size: 45px;
-                    color: var(--darkblue-color);
-                }
-            }
-        }
+    .avmAside .CampNou {
+        width: 30vw !important;
     }
 }
 
-@media screen and (max-width: 750px) {
-    :root {
-        --red-color: red;
-        --background-color: skyblue;
-        --darkblue-color: darkblue;
-        --white-color: white;
-        --lightgreen-color: lightgreen;
-
-        body {
-            background-color: var(--background-color);
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 150px 1fr 100px;
-            grid-template-areas: 
-                        "head"
-                        "main"
-                        "footer";
-        
-            .head {
-                grid-area: head;
-                align-items: center;
-                width: 100%;
-                background-color: var(--background-color);
-                top:0;
-
-                .title {
-                    grid-area: head;
-                    font-size: 3vw;
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                    color: var(--white-color);
-                }
-                .navbar {
-                    text-align: center;
-                    margin: 2vh;
-
-                    .navlink {
-                        font-size: 2.3vw;
-                        font-family: Arial, sans-serif;
-                        color: var(--white-color);
-                        text-decoration: none;
-                        margin: 1vw;
-                        padding: 5px;
-                        display: inline-block;
-                        transition: transform 0.3s ease, color 0.3s ease;
-                    }
-                    .navlink:hover {
-                        transform: scale(1.2);
-                        color: var(--lightgreen-color);
-                    }
-                }
-            }
-            .main {
-                grid-area: main;
-                font-size: 2.5vw;
-                font-family: Arial, sans-serif;
-                text-align: center;
-
-                .messipicture {
-                    border-radius: 30px;
-                    width: 40vw;
-                    height: auto; 
-                    text-align: center;
-                }
-                .vereine {
-                    border-radius: 30px;
-                    width: 250px;
-                    height: auto; 
-                    text-align: center;
-                }
-                .vereine2 {
-                    border-radius: 30px;
-                    width: 250px;
-                    height: auto;
-                    text-align: center;
-                }
-                .input {
-                    width: 50vw;
-                    height: 4vh;
-                    border-radius: 10px;
-                }
-                .input-submit {
-                    width: 100px;
-                    height: 25px;
-                    border-radius: 10px;
-                }
-                .maps-stadiums {
-                    width: 60vw;
-                    height: 50vh;
-                }
-            }
-            .footer {
-                grid-area: footer;
-                text-align: center;
-                color: var(--red-color);
-                font-size: 30px;
-            }
-            .achievements-main {
-                display: flex;
-                gap: 40px;
-                align-items: flex-start;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-
-                .tbl-h {
-                    border-collapse: collapse;
-                }
-                .tbl-h th, .tbl-h td {
-                    border: 1px solid black;
-                    padding: 10px;
-                    background-color: var(--white-color);
-                }
-            }
-            .avmAside {
-                grid-area: aside;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
-                    .messipictureAchievements {
-                        border-radius: 30px;
-                        width: 250px;
-                        height: auto;
-                    }
-                    .CampNou {
-                        border-radius: 30px;
-                        margin-top: 30vh;
-                        width: 30vw;
-                    }
-            }
-            .messivideo {
-                text-align: center;  
-            }
-            main {
-
-                h2:first-child {
-                    font-size: 45px;
-                    color: var(--darkblue-color);
-                }
-            }
-        }
+@media  screen and (max-width: 450px) {
+    .messivideo {
+        margin-top: 20px;
     }
-}
 
-@media screen and (max-width: 400px) {
-    :root {
-        --red-color: red;
-        --background-color: skyblue;
-        --darkblue-color: darkblue;
-        --white-color: white;
-        --lightgreen-color: lightgreen;
+    .input {
+        height: 17px !important;
+    }
 
-        body {
-            background-color: var(--background-color);
-            display: grid;
-            grid-template-columns: 70% 30%;
-            grid-template-rows: 300px 1fr 100px;
-            grid-template-areas: 
-                        "head head"
-                        "main aside"
-                        "footer footer";
-        
-            .head {
-                grid-area: head;
-                align-items: center;
-                width: 100%;
-                background-color: var(--background-color);
-                top:0;
-
-                .title {
-                    grid-area: head;
-                    font-size: 3vw;
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                    color: var(--white-color);
-                }
-                .navbar {
-                    text-align: center;
-                    margin: 2vh;
-
-                    .navlink {
-                        font-size: 2.3vw;
-                        font-family: Arial, sans-serif;
-                        color: var(--white-color);
-                        text-decoration: none;
-                        margin: 1vw;
-                        padding: 5px;
-                        display: inline-block;
-                        transition: transform 0.3s ease, color 0.3s ease;
-                    }
-                    .navlink:hover {
-                        transform: scale(1.2);
-                        color: var(--lightgreen-color);
-                    }
-                }
-            }
-            .main {
-                grid-area: main;
-                font-size: 30px;
-                font-family: Arial, sans-serif;
-                text-align: center;
-
-                .messipicture {
-                    border-radius: 30px;
-                    width: 25vw;
-                    height: auto; 
-                    text-align: center;
-                }
-                .vereine {
-                    border-radius: 30px;
-                    width: 250px;
-                    height: auto; 
-                    text-align: center;
-                }
-                .vereine2 {
-                    border-radius: 30px;
-                    width: 250px;
-                    height: auto;
-                    text-align: center;
-                }
-                .input {
-                    width: 200px;
-                    height: 25px;
-                    border-radius: 10px;
-                }
-                .input-submit {
-                    width: 100px;
-                    height: 25px;
-                    border-radius: 10px;
-                }
-                .maps-stadiums {
-                    width: 60vw;
-                    height: 50vh;
-                }
-            }
-            .footer {
-                grid-area: footer;
-                text-align: center;
-                color: var(--red-color);
-                font-size: 30px;
-            }
-            .achievements-main {
-                display: flex;
-                gap: 40px;
-                align-items: flex-start;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 25px;
-
-                .tbl-h {
-                    border-collapse: collapse;
-                }
-                .tbl-h th, .tbl-h td {
-                    border: 1px solid black;
-                    padding: 10px;
-                    background-color: var(--white-color);
-                }
-            }
-            .avmAside {
-                grid-area: aside;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
-                    .messipictureAchievements {
-                        border-radius: 30px;
-                        width: 250px;
-                        height: auto;
-                    }
-                    .CampNou {
-                        border-radius: 30px;
-                        margin-top: 20vh;
-                        width: 30vw;
-                    }
-            }
-            .messivideo {
-                text-align: center;  
-            }
-            main {
-
-                h2:first-child {
-                    font-size: 45px;
-                    color: var(--darkblue-color);
-                }
-            }
-        }
+    .navlink {
+        font-size: 2.6vw !important;
     }
 }
