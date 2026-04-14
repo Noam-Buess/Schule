@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rückmeldung zur Webseite">
+    <link rel="stylesheet" href="index.css">
+    <title>Anmelden</title>
+</head>
+<body class="body">
+    <div class="head">
+        <header class="title">
+            <h1>Anmelden</h1>
+        </header>
+        <nav class="navbar">
+            <a href="../index.html" class="navlink">Home</a>    
+            <a href="login.html" class="navlink">Anmelden</a>
+            <a href="achivements.html" class="navlink">Achivements</a>
+            <a href="highlights.html" class="navlink">Highlights</a>
+            <a href="Stadien.html" class="navlink">Stadien</a>
+            <a href="https://www.themessistore.com/" target="_blank" class="navlink">The Messi Store</a>
+        </nav>
+    </div>
+    <main class="main">
+        <h2>Log In</h2>
+        <form method="post" action="https://gibm.becknet.ch/formular/formular.php" target="_blank">
+            <label>Anrede *</label> <br>
+
+            <select class="input" name="anrede">
+                <option name="Mann" id="Mann">Mann</option>
+                <option name="Frau" id="Frau">Frau</option>
+                <option name="Divers" id="Divers">Divers</option>
+            </select> <br> <br>
+
+            <label for="firstname">Vorname *</label><br>
+            <input type="text" name="firstname" id="firstname" placeholder="Vorname" required autofocus class="input"><br><br>
+
+            <label for="lastname">Nachname *</label><br>
+            <input type="text" name="lastname" id="lastname" placeholder="Nachname" required class="input"><br><br>
+            
+            <label for="gebdate">Geburtsdatum *</label> <br>
+            <input type="date" name="gebdate" id="gebdate" required class="input" min="1926-03-07" max="2026-03-07"> <br> <br>
+
+            <label for="email">E-Mail *</label><br> 
+            <input type="email" name="email" id="email" required placeholder="example@example.com" class="input"><br> <br>
+
+            <label for="tel">Telefonnummer *</label> <br>
+            <input type="tel" name="tel" id="tel" required class="input" minlength="10" maxlength="10" pattern="[0-9]*" title="bitte gültige nummer eingeben"> <br> <br>
+
+            <label for="password">Passwort *</label> <br>
+            <input type="password" name="password" id="password" required class="input" pattern=".{8,}" title="mind. 8 Buchstaben"> <br> <br>
+
+            <input type="submit" value="Anmelden" class="input-submit">
+            <input type="reset" value="Reset" class="input-submit">
+            <br>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>Developed by Noam Buess</p>
+        <a href="mailto:noam.buess@bbzbl-it.ch" >noam.buess@bbzbl-it.ch</a>
+        <a href="tel:0775089564">077 508 95 64</a>
+    </footer>
+</body>
+</html>
