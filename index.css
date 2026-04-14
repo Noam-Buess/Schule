@@ -121,7 +121,7 @@
         main {
 
             h2:first-child {
-                font-size: 45px;
+                font-size: 4vw;
                 color: var(--darkblue-color);
             }
         }
