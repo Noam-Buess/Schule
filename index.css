@@ -1,6 +1,6 @@
 :root {
     --red-color: red;
-    --background-color: skyblue;
+    --background-color: rgb(3, 102, 141);
     --darkblue-color: darkblue;
     --white-color: white;
     --lightgreen-color: lightgreen;
@@ -14,6 +14,10 @@
                     "head"
                     "main"
                     "footer";
+
+        label {
+            color: var(--white-color)
+        }
     
         .head {
             grid-area: head;
@@ -28,6 +32,10 @@
                 font-family: Arial, sans-serif;
                 text-align: center;
                 color: var(--white-color);
+
+                h1 {
+                    color: var(--white-color);
+                }
             }
             .navbar {
                 display: flex;
@@ -58,6 +66,18 @@
             text-align: center;
             font-size: 2.2vw;
             font-family: Arial, sans-serif;
+
+            h2 {
+                color: var(--white-color)
+            }
+            
+            p {
+                color: var(--white-color);
+            }
+
+            .main-title {
+                color: var(--white-color);
+            }
             
 
             .messipicture {
@@ -81,7 +101,7 @@
             }
             #NOB {
                 font-size: 2.2vw;
-                color: var(--darkblue-color);
+                color: var(--white-color);
                 margin: 6vw;
             }
             .input {
@@ -108,6 +128,10 @@
             gap: 20px;
             color: var(--red-color);
             font-size: 3vw;
+
+            a, p {
+                color: var(--white-color)
+            }
         }
         .messivideo {
             display: flex;
@@ -122,7 +146,11 @@
 
             h2:first-child {
                 font-size: 4vw;
-                color: var(--darkblue-color);
+                color: var(--white-color);
+            }
+
+            h3 {
+                color: var(--white-color);
             }
         }
     }
@@ -147,7 +175,12 @@
                 font-family: Arial, sans-serif;
                 text-align: center;
                 color: var(--white-color);
+
+                h2 {
+                    color: var(--white-color);
+                }
             }
+                
 
             .navbar {
                 display: flex;
@@ -179,9 +212,21 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 2.2vw;
 
+            p {
+                color: var(--white-color);
+            }
+
+            li {
+                color: var(--white-color);
+            }
+
+            h3 {
+                color: var(--white-color)
+            }
+
             h2 {
                 font-size: 3vw;
-                color: var(--darkblue-color);
+                color: var(--white-color);
             }
 
             .tbl-h {
